@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="cat">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulari d'enviament</title>
+        <script type="text/javascript">
+        function validar(){
+            var psswd=document.getElementById("psswd").value;
+            var confpsswd=document.getElementById("confpsswd").value; if(psswd==confpsswd){
+                return true;
+            }
+            else{
+                alert("No coincideix");
+                return false;
+            }
+        }
+        </script>
+    </head>
+    <body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <table align="center" style="background-color: #EFEFEF;">
+            <tr>
+                <td width="1000px" style="background-color: #306090;" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><h2 style="color: white;" >Enviar missatge <img align="right" src="img/gb_reload_s.gif" width="50px"></h2></td>
+            </tr>
+        <form action="mailto:adrian.manzano@insalpineda.cat" onsubmit="return validar();" action="" method="get">
+            <tr>
+                <td style="background-color:#EFEFEF;"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="">Nom: </label>
+                        <input type="text" name="nom" maxlength="50">
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="">E-Mail: </label> 
+                        <input type="email" name="E-Mail" maxlength="50">
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="">Usuari: </label>
+                        <input type="text" name="Usuari" maxlength="8">
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="">Contrasenya: </label>
+                        <input type="password" name="Contrasenya" maxlength="50">
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="">Repetició de la contrasenya: </label>
+                        <input type="password" name="confpsswd" maxlength="50">
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="">Arxiu: </label>
+                        <input type="text" name="Arxiu">
+                        <input type="file">
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="">Imatge: </label>
+                        <input type="text" name="Imatge">
+                        <input type="file">
+                        <p style="text-align: center;"><small><small>El tamany de l'arxiu i la imatge no pot exedir els 4 KBytes</small></small></p>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="">Quins jocs t'interessen?</label>
+                        <input type="checkbox"name="Elden Ring" value="Elden">Elden Ring
+                        <input type="checkbox"name="Outlast 3" value="Outlast">Outlast 3
+                        <input type="checkbox"name="Battelfield 2042" value="Battelfield">Battelfield 2042
+                        <input type="checkbox"name="Forza Horizon 5" value="Forza">Forza Horizon 5
+                        
+                    </p>
+                 </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <label for="">Requereixo resposta: </label> 
+                        <input type="radio" name="resposta" value="Sí">Sí <input type="radio" name="resposta" value="No">No
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div align="center">
+                        <p>
+                         <label style="text-align: center;" for="">Missatge: </label>
+                        </p>
+                        <textarea style="text-align: center; width: 300px;"></textarea></div>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                        <div align="center">
+                            <p>
+                                <label for=""></label>
+                                <a href=""><input type="submit" value="Enviar"></a>
+                                <label for=""></label>
+                                <input type="submit" value="Borrar">
+                            </p>
+                        </div>
+                     </td>
+                 </tr>                 
+        </form>
+        
+        
+        
+        </table>
+    </body>
+</html>
